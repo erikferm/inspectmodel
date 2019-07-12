@@ -1,12 +1,17 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io/ioutil"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/tensorflow/tensorflow/tensorflow/go/core/protobuf"
 )
+
+func init() {
+	flag.String()
+}
 
 func main() {
 	b, err := ioutil.ReadFile("saved_model.pb")
